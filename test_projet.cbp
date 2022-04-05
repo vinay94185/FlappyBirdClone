@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="test_projet" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/test_projet" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/SFML_Debug/include" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-s-d" />
+					<Add library="sfml-window-s-d" />
+					<Add library="sfml-audio-s" />
+					<Add library="sfml-system-s-d" />
+					<Add library="opengl32" />
+					<Add library="freetype" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="openal32" />
+					<Add library="flac" />
+					<Add library="vorbisenc" />
+					<Add library="vorbisfile" />
+					<Add library="vorbis" />
+					<Add library="ogg" />
+					<Add directory="C:/SFML_Debug/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/test_projet" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/SFML/include" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-audio-s" />
+					<Add library="sfml-system-s" />
+					<Add library="opengl32" />
+					<Add library="freetype" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="openal32" />
+					<Add library="flac" />
+					<Add library="vorbisenc" />
+					<Add library="vorbisfile" />
+					<Add library="vorbis" />
+					<Add library="ogg" />
+					<Add directory="C:/SFML/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+			<Add option="-DSFML_STATIC" />
+			<Add directory="C:/SFML/include" />
+		</Compiler>
+		<Linker>
+			<Add directory="C:/SFML/lib" />
+		</Linker>
+		<Unit filename="include/AssetManager.h" />
+		<Unit filename="include/Bird.h" />
+		<Unit filename="include/Collision.h" />
+		<Unit filename="include/DataLoder.h" />
+		<Unit filename="include/Definations.h" />
+		<Unit filename="include/Flash.h" />
+		<Unit filename="include/Game.h" />
+		<Unit filename="include/GameOverState.h" />
+		<Unit filename="include/GameState.h" />
+		<Unit filename="include/HUD.h" />
+		<Unit filename="include/InputManager.h" />
+		<Unit filename="include/MainMenuState.h" />
+		<Unit filename="include/Pipe.h" />
+		<Unit filename="include/SplashState.h" />
+		<Unit filename="include/StateMeachine.h" />
+		<Unit filename="include/land.h" />
+		<Unit filename="include/state.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/AssetManager.cpp" />
+		<Unit filename="src/Bird.cpp" />
+		<Unit filename="src/Collision.cpp" />
+		<Unit filename="src/DataLoder.cpp" />
+		<Unit filename="src/Flash.cpp" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/GameOverState.cpp" />
+		<Unit filename="src/GameState.cpp" />
+		<Unit filename="src/HUD.cpp" />
+		<Unit filename="src/InputManager.cpp" />
+		<Unit filename="src/MainMenuState.cpp" />
+		<Unit filename="src/Pipe.cpp" />
+		<Unit filename="src/SplashState.cpp" />
+		<Unit filename="src/StateMeachine.cpp" />
+		<Unit filename="src/land.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
